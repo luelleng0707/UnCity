@@ -1,0 +1,151 @@
+nav {
+    font: Century Gothic;
+    font-size: 45;
+    margin-left: 10px;
+}
+.Service {
+    margin: 10%;
+}
+
+.description {
+    margin: 10%;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+html { 
+    background: url("img/Component 15 – 3.png") no-repeat center fixed;
+    color: white;
+    margin: 5%;
+  }
+.slider img {
+    height: 10%;
+    position: relative;
+    animation: slide 5s linear infinite;
+    margin:auto;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    color: white;
+    height: 100%;
+}
+
+/* Medium screens (tablet/ipad) → 2 per row */
+@media (max-width: 1024px) {
+    .icon {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (phones) → 1 per row */
+@media (max-width: 600px) {
+    .icon {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#line-paragraph {
+    border-left: 1px solid turquoise;
+    padding-left: 10%;
+    height: auto;
+    width: 60%;
+}
+  
+#line-paragraph h1 {
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-right 1s forwards;
+  }
+
+  @keyframes slide-right {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+ 
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 2% 2%; 
+    margin: 8%;
+    
+} 
+.box p {
+    border: 2px solid white;
+    padding: 10%;
+    text-align: center;
+}
+
+#b1, #b2,#b3,#b4,#b5,#b6 {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slide-up 1s forwards;
+}
+#b2 {
+  animation-delay: 2s;
+}
+
+#b3 {
+  animation-delay: 3s;
+}
+
+#b4 {
+  animation-delay: 4s;
+}
+
+#b5 {
+  animation-delay: 5s;
+}
+
+#b6 {
+  animation-delay: 6s;
+}
+
+@keyframes slide-up {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 100px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+}
+.circle {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 200px;
+}
+#logo {
+  margin:5%;
+}
